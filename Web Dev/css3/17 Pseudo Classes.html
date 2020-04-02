@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Classes</title>
+        <meta charset="UTF-8">
+
+
+        <style>
+        
+        body :not(h1){
+            color: blue
+        }
+
+        p:last-child{
+            font-size: 30px;
+        }
+
+        p:only-child{
+            background: pink;
+        }
+        
+        </style>
+    </head>
+
+    <body>
+
+        <div>
+            <p>only child</p>
+        </div>
+
+        <h1>Selektor - Pseudo Classes</h1>
+
+        <div>
+            <p>Paragraf pertama</p>
+            <p id="kedua">Paragraf kedua</p>
+            <p id="ketiga">Paragraf ketiga</p>
+        </div>
+
+        <div>
+            <p>only child</p>
+        </div>
+
+
+    </body>
+</html>

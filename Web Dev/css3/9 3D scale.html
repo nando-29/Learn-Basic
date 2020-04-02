@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D translate and rotate</title>
+        <meta charset="UTF-8">
+        <style>
+
+            div{
+                width: 100px; height: 100px; margin-bottom: 5px; margin-left: 5px;
+            }
+
+            #div2{
+                perspective: 100px;
+                perspective-origin: 60% 10%;
+            }
+            #div3{
+                background: red;
+                transform: scaleZ(1) rotateY(45deg);
+            }
+
+            #div3:hover{
+                transform: scaleZ(1.5) rotateY(45deg);
+                transition: transform 1s;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Scale</h1>
+
+        <div id="div2">
+            <div id="div3"></div>
+        </div>
+
+
+    </body>
+</html>

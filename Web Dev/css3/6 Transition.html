@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition</title>
+        <meta charset="UTF-8">
+        <style>
+
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                margin-bottom: 5px;
+            }
+
+            #div1:hover{
+                width: 200px;
+                /*background: red;
+                transition: width 5s, background 5s;
+                */
+            }
+
+            #div2:hover{
+                background-color: red;
+                transition: background-color 2s;
+                transition-delay: 1s;
+            }
+
+            #div3:hover{
+                height: 120px;
+                transition-timing-function: ease;
+                transition: height 1s;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+
+        <h1>Transition</h1>
+
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+
+
+    </body>
+</html>

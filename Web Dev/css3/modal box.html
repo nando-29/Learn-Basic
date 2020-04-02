@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selamat Datang</title>
+        <meta charset="UTF-8">
+        <style>
+
+            body{
+                margin: 15% 15%;
+                font-family: sans-serif;
+            }
+
+            a{
+                color: black;
+                text-decoration: none;
+            }
+
+            .in-kotak{
+                background-color: rgb(71, 127, 177);
+                padding: 10px;
+                width: 300px;
+                height: 100px;
+                position: fixed;
+                left: 50%;
+                margin-left: -150px;
+                transform: translateY(-500%); 
+            }
+
+            .kotak:before{
+                content: "";
+                background-color: rgba(0, 0, 0, 0.8);
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display: none;
+            }
+
+            .kotak:target .in-kotak{
+                transform: translateY(0%);
+            }
+
+            .kotak:target:before{
+                display: block;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        
+
+        <h1>CSS TIPS</h1>
+
+        <a href="#daftar">Daftar</a>
+        <a href="#login">Login</a>
+
+        <div class="kotak" id="daftar">
+            <div class="in-kotak">
+
+                <input type="text" name="name" value=""> <br>
+                <input type="text" name="name" value=""> <br>
+                <button>Daftar</button> <br>
+                <a href="#">tutup</a>
+
+            </div>
+        </div>
+
+        <div class="kotak" id="login">
+                <div class="in-kotak">
+    
+                    <input type="text" name="name" value=""> <br>
+                    <input type="text" name="name" value=""> <br>
+                    <button>Login</button> <br>
+                    <a href="#">tutup</a>
+    
+                </div>
+            </div>
+
+    </body>
+</html>

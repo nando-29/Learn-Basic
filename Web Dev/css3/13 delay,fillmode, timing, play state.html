@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>delay,fillmode, timing, play state</title>
+        <meta charset="UTF-8">
+        <style>
+
+            body{
+                margin-bottom: 500px;
+                margin-left: 50px;
+            }
+
+            div{
+                background: yellow;
+                width: 150px; height: 150px;
+                animation-name: nando;
+                animation-duration: 2s;
+
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+                /*fill mode --> untuk menentukan berhenti dikondisi akhir*/
+                animation-timing-function: ease-in;
+                /*animation-play-state: paused;*/
+            }
+
+            @keyframes nando{
+                from{background: yellow;}
+                to{background: rebeccapurple;}
+            }
+
+            /*
+            keyframes dengan %:
+            @keyframes nando{
+                0%{background: yellow; width: 100px;}
+                25%{background: rebeccapurple; width: 80px;}
+                50%{background: blue; width: 50px;}
+                75%{background: blueviolet; width: 30px;}
+                100%{background: aqua; width:10px;}
+            }
+            */
+        </style>
+    </head>
+    <body>
+        
+
+        <h1>Animasi</h1>
+
+        <div></div>
+
+
+    </body>
+</html>

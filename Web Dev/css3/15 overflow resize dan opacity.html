@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>overflow resize dan opacity</title>
+        <meta charset="UTF-8">
+        <style>
+
+            div{
+                width: 150px;
+                height: 150px;
+                background: yellow;
+                overflow-y: hidden;
+                resize: both;
+                opacity: 0.4;
+            }
+
+            #gambar{
+                opacity: 0.5;
+            }
+
+            #gambar:hover{
+                opacity: 1;
+                transition: opacity 5s;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <div>
+            Text Here, belajar koding di sekolahkoding,
+            Text Here, belajar koding di sekolahkoding,
+            Text Here, belajar koding di sekolahkoding,
+            Text Here, belajar koding di sekolahkoding,
+            Text Here, belajar koding di sekolahkoding,
+            Text Here, belajar koding di sekolahkoding,
+            Text Here, belajar koding di sekolahkoding,
+        </div>
+
+        <img src="gambar.jpg" width="300" alt="" id="gambar">
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scale and Skew</title>
+        <meta charset="UTF-8">
+        <style>
+
+            body{
+                margin-left: 100px; 
+            }
+
+            #div1{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                transform: scale(2,2); /*Berarti ukurannya 2x lipat*/
+            }
+
+            #div2{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                transform: skew(10deg, 10deg);
+                /*
+                transform: skewX(10deg);
+                transform: skewY(10deg);  
+                */         
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>Scale</h1> <br><br><br>
+        <div id="div1"></div>
+
+        <br><br><br>
+
+        <h1>Skew</h1>
+        <div id="div2"></div>
+
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hover</title>
+        <meta charset="UTF-8">
+        <style>
+
+            #info{
+                background-color: rgba(0,0,0, 0.7);
+                position: absolute;
+                top: 0px;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                padding-top: 30%;
+                color: white;
+                font-size: 20px;
+                
+            }
+
+            #info span{
+                display: block;
+            }
+
+            body{
+                margin: 15% 15%;
+                font-family: sans-serif;
+            }
+
+            #wrap{
+                width: 250px;
+                height: 250px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #wrap img{
+                width: 100%;
+                height: auto;
+            }
+
+
+            #wrap #info{
+                display: none;
+            }
+
+            #wrap:hover #info{
+                display: block;
+            }
+
+            a{
+                text-decoration: none;
+                color: whitesmoke;
+                display: block;
+                width: 100px;
+                border: 1px solid white;
+                padding: 5px;
+                margin: 0 auto;
+            }
+
+            a:hover{
+                background-color: whitesmoke;
+                color: black;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        
+    <div id="wrap">
+        <img src="fortnite.png" alt="" width="200px" height="200px">
+        <p>
+            <div id="info">
+            Baju mantap
+            <span>175000,-Rp</span>
+            <br>
+            <a href="">Belanja</a>
+            </div>
+        </p>
+    </div>
+
+    </body>
+</html>

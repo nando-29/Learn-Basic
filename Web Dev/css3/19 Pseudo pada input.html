@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo pada input</title>
+        <meta charset="UTF-8">
+        <style>
+
+            input:checked{
+                width: 50px;
+            }
+
+            /*enabled, disabled, invalids */
+
+            input:enabled{
+                border: 2px solid blue;
+            }
+
+            input:disabled{
+                border: 2px solid red;
+            }
+
+            input:invalid{
+                background: red;
+            }
+        
+        </style>
+    </head>
+    <body>
+        
+
+        <input type="checkbox">Male
+        <input type="checkbox" checked>Female
+        
+        <br><br>
+
+        <input type="text" placeholder="Nama Lengkap">
+        <input type="text" placeholder="Nama Pendek">
+        <input type="text" placeholder="kota asal" disabled>
+        <input type="email" placeholder="email">
+
+
+    </body>
+</html>
